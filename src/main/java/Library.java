@@ -19,4 +19,13 @@ public class Library {
         this.collection.add(book);}
     }
 
+    public void removeBookFromLibrary(Book book){
+        this.collection.remove(0);
+    }
+
+    public void lendBook(Book book, Borrower borrower){
+        this.removeBookFromLibrary(book);
+        borrower.addBookToBorrowersCollection(book);
+    }
+
 }

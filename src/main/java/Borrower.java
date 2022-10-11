@@ -10,4 +10,11 @@ public class Borrower {
         this.borrowersCollection = new ArrayList<>();
     }
 
+    public int countBooksInBorrowersCollection(){
+        return this.borrowersCollection.size();
+    }
+
+    public void addBookToBorrowersCollection(Book book){
+        this.borrowersCollection.add(book);
+    }
 }
